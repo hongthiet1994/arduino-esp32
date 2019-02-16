@@ -31,7 +31,8 @@ uint8_t shiftIn(uint8_t dataPin, uint8_t clockPin, uint8_t bitOrder) {
         else
             value |= digitalRead(dataPin) << (7 - i);
         digitalWrite(clockPin, HIGH);
-        digitalWrite(clockPin, LOW);
+     //   digitalWrite(clockPin, LOW);
+     digitalWrite(clockPin, LOW);
     }
     return value;
 }
